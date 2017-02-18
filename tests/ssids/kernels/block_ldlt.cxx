@@ -8,7 +8,7 @@
  * proves to be useful beyond our own academic experiments)
  *
  */
-#include "block_ldlt.hxx"
+#include <block_ldlt.hxx>
 
 #include <climits>
 #include <cmath>
@@ -16,10 +16,10 @@
 #include <iomanip>
 #include <iostream>
 
-#include "framework.hxx"
-#include "AlignedAllocator.hxx"
-#include "ssids/cpu/kernels/wrappers.hxx"
-#include "ssids/cpu/kernels/block_ldlt.hxx"
+#include <framework.hxx>
+#include <AlignedAllocator.hxx>
+#include <ssids/cpu/kernels/wrappers.hxx>
+#include <ssids/cpu/kernels/block_ldlt.hxx>
 
 using namespace spral::ssids::cpu;
 using namespace spral::test;

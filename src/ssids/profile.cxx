@@ -3,7 +3,7 @@
  *  \licence   BSD licence, see LICENCE file for details
  *  \author    Jonathan Hogg
  */
-#include "ssids/profile.hxx"
+#include <ssids/profile.hxx>
 
 #ifdef PROFILE
 struct timespec spral::ssids::Profile::tstart;

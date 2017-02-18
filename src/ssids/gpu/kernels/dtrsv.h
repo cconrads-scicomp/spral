@@ -20,7 +20,7 @@ __inline__ __device__ T_ELEM loadVolatile(volatile T_ELEM *vptr) {
    return *vptr;
 }
 
-#include "cuda/cuda_check.h"
+#include <cuda/cuda_check.h>
 #include <stdio.h>
 #include <cuComplex.h>
 

@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 // Define complex types that work with both C and C++
-#include "spral_complex.h"
+#include <spral_complex.h>
 
 #ifdef __cplusplus
 extern "C" {

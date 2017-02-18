@@ -1,13 +1,13 @@
 /* examples/C/ssmfe/precond_ssmfe.c */
 /* Laplacian on a square grid (using SPRAL_SSMFE routines) */
-#include "spral.h"
+#include <spral.h>
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <cblas.h>
 
 /* Header that implements Laplacian and preconditioners */
-#include "laplace2d.h"
+#include <laplace2d.h>
 
 int main(void) {
    const int m   = 20;     /* grid points along each side */

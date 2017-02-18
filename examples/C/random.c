@@ -1,5 +1,5 @@
 /* examples/C/random.c - Example code for SPRAL_RANDOM package */
-#include "spral.h"
+#include <spral.h>
 #include <limits.h>
 #include <stdio.h>
 

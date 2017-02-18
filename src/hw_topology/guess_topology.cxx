@@ -6,18 +6,18 @@
  *  \brief
  *  Implements topology guessing functions.
  */
-#include "hw_topology/guess_topology.hxx"
+#include <hw_topology/guess_topology.hxx>
 
-#include "config.h"
+#include <config.h>
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
-#ifdef HAVE_NVCC
+#ifdef HAVE_CUDA
 #include <cuda_runtime_api.h>
-#endif /* HAVE_NVCC */
+#endif /* HAVE_CUDA */
 
-#include "compat.hxx"
-#include "hw_topology/hwloc_wrapper.hxx"
+#include <compat.hxx>
+#include <hw_topology/hwloc_wrapper.hxx>
 
 #include <cstdio> // debug
 
@@ -52,7 +52,7 @@ void spral_hw_topology_guess(int* nregions, NumaRegion** regions) {
    *regions = new NumaRegion[*nregions];
    NumaRegion& region = (*regions)[0];
    region.nproc = omp_get_max_threads();
-#if HAVE_NVCC
+#if HAVE_CUDA
    cudaError_t cuda_error = cudaGetDeviceCount(&region.ngpu);
    if(cuda_error != 0) {
       printf("CUDA Failed, working without GPU\n");
@@ -61,10 +61,10 @@ void spral_hw_topology_guess(int* nregions, NumaRegion** regions) {
    region.gpus = (region.ngpu > 0) ? new int[region.ngpu] : nullptr;
    for(int i=0; i<region.ngpu; ++i)
       region.gpus[i] = i;
-#else /* HAVE_NVCC */
+#else /* HAVE_CUDA */
    region.ngpu = 0;
    region.gpus = nullptr;
-#endif /* HAVE_NVCC */
+#endif /* HAVE_CUDA */
 #endif /* HAVE_HWLOC */
 }
 

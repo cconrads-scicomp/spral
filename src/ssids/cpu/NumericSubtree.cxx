@@ -3,14 +3,14 @@
  *  \licence   BSD licence, see LICENCE file for details
  *  \author    Jonathan Hogg
  */
-#include "ssids/cpu/NumericSubtree.hxx"
+#include <ssids/cpu/NumericSubtree.hxx>
 
 #include <cassert>
 #include <cstdio>
 #include <memory>
 
-#include "omp.hxx"
-#include "ssids/cpu/AppendAlloc.hxx"
+#include <omp.hxx>
+#include <ssids/cpu/AppendAlloc.hxx>
 
 using namespace spral::ssids::cpu;
 

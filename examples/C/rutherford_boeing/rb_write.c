@@ -1,7 +1,7 @@
 /* examples/C/rutherford_boeing/rb_write.c
  * Example code for SPRAL_RUTHERFORD_BOEING */
 #include <stdio.h>
-#include "spral.h"
+#include <spral.h>
 
 int main(void) {
    /* Initialize options */

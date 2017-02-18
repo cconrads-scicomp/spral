@@ -1,5 +1,5 @@
 /* examples/C/random_matrix.c - Example code for SPRAL_RANDOM_MATRIX package */
-#include "spral.h"
+#include <spral.h>
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -8,7 +8,7 @@
  * proves to be useful beyond our own academic experiments)
  *
  */
-#include "framework.hxx"
+#include <framework.hxx>
 
 #include <algorithm>
 #include <cmath>

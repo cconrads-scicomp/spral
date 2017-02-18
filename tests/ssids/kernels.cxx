@@ -13,13 +13,13 @@
 
 #include <fenv.h>
 
-#include "kernels/framework.hxx"
+#include <kernels/framework.hxx>
 
-#include "kernels/block_ldlt.hxx"
-#include "kernels/cholesky.hxx"
-#include "kernels/ldlt_app.hxx"
-#include "kernels/ldlt_nopiv.hxx"
-#include "kernels/ldlt_tpp.hxx"
+#include <kernels/block_ldlt.hxx>
+#include <kernels/cholesky.hxx>
+#include <kernels/ldlt_app.hxx>
+#include <kernels/ldlt_nopiv.hxx>
+#include <kernels/ldlt_tpp.hxx>
 
 int main(void) {
    int nerr = 0;

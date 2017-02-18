@@ -7,7 +7,7 @@
 
 #include <memory>
 
-#include "omp.hxx"
+#include <omp.hxx>
 
 namespace spral { namespace ssids { namespace cpu {
 

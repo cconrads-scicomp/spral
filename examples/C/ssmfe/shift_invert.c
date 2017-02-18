@@ -1,14 +1,14 @@
 /* examples/C/ssmfe/shift_invert.c */
 /* Laplacian on a rectangular grid by shift-invert via LDLT factorization */
-#include "spral.h"
+#include <spral.h>
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <cblas.h>
 
 /* Headers that implements Laplacian and preconditioners and LDLT support */
-#include "laplace2d.h"
-#include "ldltf.h"
+#include <laplace2d.h>
+#include <ldltf.h>
 
 int main(void) {
    const int nx = 8;          /* grid points along x */

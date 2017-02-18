@@ -3,7 +3,7 @@
  *  \licence   BSD licence, see LICENCE file for details
  *  \author    Jonathan Hogg
  */
-#include "ssids/cpu/kernels/ldlt_app.hxx"
+#include <ssids/cpu/kernels/ldlt_app.hxx>
 
 #include <algorithm>
 #include <climits>
@@ -21,17 +21,17 @@
 #include <omp.h>
 #endif /* _OPENMP */
 
-#include "compat.hxx"
-#include "ssids/profile.hxx"
-#include "ssids/cpu/BlockPool.hxx"
-#include "ssids/cpu/BuddyAllocator.hxx"
-#include "ssids/cpu/cpu_iface.hxx"
-#include "ssids/cpu/Workspace.hxx"
-#include "ssids/cpu/kernels/block_ldlt.hxx"
-#include "ssids/cpu/kernels/calc_ld.hxx"
-#include "ssids/cpu/kernels/ldlt_tpp.hxx"
-#include "ssids/cpu/kernels/common.hxx"
-#include "ssids/cpu/kernels/wrappers.hxx"
+#include <compat.hxx>
+#include <ssids/profile.hxx>
+#include <ssids/cpu/BlockPool.hxx>
+#include <ssids/cpu/BuddyAllocator.hxx>
+#include <ssids/cpu/cpu_iface.hxx>
+#include <ssids/cpu/Workspace.hxx>
+#include <ssids/cpu/kernels/block_ldlt.hxx>
+#include <ssids/cpu/kernels/calc_ld.hxx>
+#include <ssids/cpu/kernels/ldlt_tpp.hxx>
+#include <ssids/cpu/kernels/common.hxx>
+#include <ssids/cpu/kernels/wrappers.hxx>
 
 namespace spral { namespace ssids { namespace cpu {
 

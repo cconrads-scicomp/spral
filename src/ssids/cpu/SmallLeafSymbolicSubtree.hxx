@@ -7,8 +7,8 @@
 
 #include <memory>
 
-#include "ssids/cpu/cpu_iface.hxx"
-#include "ssids/cpu/SymbolicNode.hxx"
+#include <ssids/cpu/cpu_iface.hxx>
+#include <ssids/cpu/SymbolicNode.hxx>
 
 namespace spral { namespace ssids { namespace cpu {
 

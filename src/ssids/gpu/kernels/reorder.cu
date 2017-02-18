@@ -5,8 +5,8 @@
 #include <cuda_runtime_api.h>
 #include <device_launch_parameters.h>
 
-#include "ssids/gpu/kernels/datatypes.h"
-#include "cuda/cuda_check.h"
+#include <ssids/gpu/kernels/datatypes.h>
+#include <cuda/cuda_check.h>
 
 #define min(x,y) ((x) < (y) ? (x) : (y))
 

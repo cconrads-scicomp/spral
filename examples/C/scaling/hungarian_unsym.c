@@ -1,7 +1,7 @@
 /* examples/C/scaling/hungarian_unsym.c - Example code for SPRAL_SCALING */
 #include <stdlib.h>
 #include <stdio.h>
-#include "spral.h"
+#include <spral.h>
 
 int main(void) {
    /* Derived types */

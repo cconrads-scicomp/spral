@@ -7,11 +7,11 @@
 
 #include <memory>
 
-#include "ssids/cpu/cpu_iface.hxx"
-#include "ssids/cpu/factor.hxx"
-#include "ssids/cpu/NumericNode.hxx"
-#include "ssids/cpu/SmallLeafSymbolicSubtree.hxx"
-#include "ssids/cpu/ThreadStats.hxx"
+#include <ssids/cpu/cpu_iface.hxx>
+#include <ssids/cpu/factor.hxx>
+#include <ssids/cpu/NumericNode.hxx>
+#include <ssids/cpu/SmallLeafSymbolicSubtree.hxx>
+#include <ssids/cpu/ThreadStats.hxx>
 
 /* SPRAL headers */
 

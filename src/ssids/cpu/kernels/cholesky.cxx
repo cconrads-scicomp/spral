@@ -3,13 +3,13 @@
  *  \licence   BSD licence, see LICENCE file for details
  *  \author    Jonathan Hogg
  */
-#include "ssids/cpu/kernels/cholesky.hxx"
+#include <ssids/cpu/kernels/cholesky.hxx>
 
 #include <algorithm>
 #include <cstdio> // FIXME: remove as only used for debug
 
-#include "ssids/profile.hxx"
-#include "ssids/cpu/kernels/wrappers.hxx"
+#include <ssids/profile.hxx>
+#include <ssids/cpu/kernels/wrappers.hxx>
 
 namespace spral { namespace ssids { namespace cpu {
 

@@ -7,16 +7,16 @@
  *  Implements HwlocTopology wrapper around hwloc library
  */
 #pragma once
-#include "config.h"
+#include <config.h>
 #ifdef HAVE_HWLOC
 
 #include <vector>
 
 #include <hwloc.h>
-#ifdef HAVE_NVCC
+#ifdef HAVE_CUDA
 #include <cuda_runtime_api.h>
 #include <hwloc/cudart.h>
-#endif /* HAVE_NVCC */
+#endif /* HAVE_CUDA */
 
 namespace spral { namespace hw_topology {
 
@@ -77,7 +77,7 @@ public:
    /** \brief Return list of gpu indices associated to object. */
    std::vector<int> get_gpus(hwloc_obj_t const& obj) const {
       std::vector<int> gpus;
-#ifdef HAVE_NVCC
+#ifdef HAVE_CUDA
       int ngpu;
       cudaError_t cuda_error = cudaGetDeviceCount(&ngpu);
       if(cuda_error != cudaSuccess) {
@@ -96,7 +96,7 @@ public:
          }
       }
 #endif
-      return gpus; // will be empty ifndef HAVE_NVCC
+      return gpus; // will be empty ifndef HAVE_CUDA
    }
 
 private:

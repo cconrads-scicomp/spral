@@ -8,14 +8,14 @@
  * proves to be useful beyond our own academic experiments)
  *
  */
-#include "ldlt_nopiv.hxx"
+#include <ldlt_nopiv.hxx>
 
 #include <cmath>
 #include <cstring>
 
-#include "framework.hxx"
-#include "ssids/cpu/kernels/ldlt_nopiv.hxx"
-#include "ssids/cpu/kernels/wrappers.hxx"
+#include <framework.hxx>
+#include <ssids/cpu/kernels/ldlt_nopiv.hxx>
+#include <ssids/cpu/kernels/wrappers.hxx>
 
 using namespace spral::ssids::cpu;
 

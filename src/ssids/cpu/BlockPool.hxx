@@ -9,7 +9,7 @@
 #include <type_traits>
 #include <vector>
 
-#include "omp.hxx"
+#include <omp.hxx>
 
 namespace spral { namespace ssids { namespace cpu {
 

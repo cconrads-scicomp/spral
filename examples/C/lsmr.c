@@ -1,5 +1,5 @@
 /* examples/C/lsmr.c - Example code for SPRAL_LSMR package */
-#include "spral.h"
+#include <spral.h>
 
 #include <stdlib.h>
 #include <stdio.h>

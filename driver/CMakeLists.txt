@@ -1,0 +1,12 @@
+if(HAVE_CUDA)
+	add_executable(spral_ssids spral_ssids.f90 cuda_helper_gpu.f90)
+else()
+	add_executable(spral_ssids spral_ssids.f90 cuda_helper_nogpu.f90)
+endif()
+
+target_include_directories(spral_ssids PUBLIC "${CMAKE_BINARY_DIR}/src")
+target_link_libraries(spral_ssids spral)
+target_link_libraries(spral_ssids lapack)
+target_link_libraries(spral_ssids blas)
+target_link_libraries(spral_ssids metis)
+install(TARGETS spral_ssids DESTINATION bin)

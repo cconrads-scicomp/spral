@@ -1,6 +1,6 @@
 /* examples/C/ssmfe/hermitian.c - Example code for SPRAL_SSMFE package */
 /* Hermitian operator example */
-#include "spral.h"
+#include <spral.h>
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>

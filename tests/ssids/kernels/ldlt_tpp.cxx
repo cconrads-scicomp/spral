@@ -8,7 +8,7 @@
  * proves to be useful beyond our own academic experiments)
  *
  */
-#include "ldlt_tpp.hxx"
+#include <ldlt_tpp.hxx>
 
 #include <cmath>
 #include <cstring>
@@ -16,9 +16,9 @@
 #include <iostream>
 #include <limits>
 
-#include "framework.hxx"
-#include "ssids/cpu/kernels/wrappers.hxx"
-#include "ssids/cpu/kernels/ldlt_tpp.hxx"
+#include <framework.hxx>
+#include <ssids/cpu/kernels/wrappers.hxx>
+#include <ssids/cpu/kernels/ldlt_tpp.hxx>
 
 using namespace spral::ssids::cpu;
 

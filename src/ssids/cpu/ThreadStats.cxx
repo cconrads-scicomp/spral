@@ -3,7 +3,7 @@
  *  \licence   BSD licence, see LICENCE file for details
  *  \author    Jonathan Hogg
  */
-#include "ssids/cpu/ThreadStats.hxx"
+#include <ssids/cpu/ThreadStats.hxx>
 
 #include <algorithm>
 

@@ -8,8 +8,8 @@
 #include <cstdlib> // FIXME: remove debug?
 #include <limits>
 
-#include "ssids/cpu/ThreadStats.hxx"
-#include "ssids/cpu/kernels/SimdVec.hxx"
+#include <ssids/cpu/ThreadStats.hxx>
+#include <ssids/cpu/kernels/SimdVec.hxx>
 
 namespace spral { namespace ssids { namespace cpu {
 namespace block_ldlt_internal {

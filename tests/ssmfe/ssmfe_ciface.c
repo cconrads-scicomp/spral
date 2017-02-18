@@ -1,14 +1,14 @@
 /* examples/C/ssmfe/precond_expert.c */
 /* Laplacian on a square grid (using SPRAL_SSMFE_EXPERT routines) */
-#include "spral.h"
+#include <spral.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <cblas.h>
 #include <math.h>
 
 /* Header that implements Laplacian and preconditioners */
-#include "laplace2d.h"
-#include "ldltf.h"
+#include <laplace2d.h>
+#include <ldltf.h>
 
 int test_core(void);
 int test_core_d(int, int);

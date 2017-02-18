@@ -6,9 +6,9 @@
  * \brief
  * Implements compatability functions depending on the value of autoconf macros.
  */
-#include "compat.hxx"
+#include <compat.hxx>
 
-#include "config.h"
+#include <config.h>
 
 #ifndef HAVE_STD_ALIGN
 // Older versions of g++ (and intel that relies on equivalent -lstdc++) don't

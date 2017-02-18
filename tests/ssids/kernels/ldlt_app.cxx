@@ -8,19 +8,19 @@
  * proves to be useful beyond our own academic experiments)
  *
  */
-#include "ldlt_app.hxx"
+#include <ldlt_app.hxx>
 
 #include <cstring>
 #include <iomanip>
 #include <iostream>
 #include <limits>
 
-#include "AlignedAllocator.hxx"
-#include "framework.hxx"
-#include "ssids/cpu/kernels/wrappers.hxx"
+#include <AlignedAllocator.hxx>
+#include <framework.hxx>
+#include <ssids/cpu/kernels/wrappers.hxx>
 #include "ssids/cpu/kernels/ldlt_app.cxx" // .cxx as we need internal namespace
-#include "ssids/cpu/kernels/ldlt_tpp.hxx"
-#include "ssids/cpu/cpu_iface.hxx"
+#include <ssids/cpu/kernels/ldlt_tpp.hxx>
+#include <ssids/cpu/cpu_iface.hxx>
 
 using namespace spral::ssids::cpu;
 
